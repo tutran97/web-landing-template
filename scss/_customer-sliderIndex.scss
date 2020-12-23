@@ -1,0 +1,59 @@
+.customer-slider {
+  margin: 20px 0;
+  .container {
+    position: relative;
+    .ribbon-title {
+      display: block;
+      color: rgb(0, 83, 4);
+      background-color: rgb(0, 227, 64);
+      font-size: 20px;
+      font-family: "Times New Roman";
+      font-weight: bold;
+      position: absolute;
+      top: -77px;
+      left: 50%;
+      margin-left: -100px;
+      padding: 8px 30px;
+      &::before {
+        content: "";
+        width: 220px;
+        height: 2px;
+        display: block;
+        position: absolute;
+        background-color: #bfbfbf;
+        top: -1px;
+        left: -10px;
+        box-shadow: 0px 2px 3px 1px #ababab;
+      }
+    }
+    .bottom-ribbon {
+      width: 0;
+      height: 0;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-top: 17px solid #00e340;
+      position: absolute;
+      left: 50%;
+      margin-left: -100px;
+      top: -31px;
+    }
+  }
+}
+//custom owe
+main {
+  .customer-slider {
+    .customer-carousel {
+      .item {
+        .item-image {
+          padding: 0 25px;
+          img {
+            width: 100%;
+            cursor: pointer;
+            height: 80px;
+            object-fit: scale-down;
+          }
+        }
+      }
+    }
+  }
+}

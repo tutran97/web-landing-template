@@ -1,0 +1,275 @@
+.services {
+  background: #ada996; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 90px 0 280px 0;
+  position: relative;
+  .container {
+    .ribbon-title {
+      display: block;
+      color: rgb(0, 83, 4);
+      background-color: rgb(0, 227, 64);
+      font-size: 20px;
+      font-family: "Times New Roman";
+      font-weight: bold;
+      position: absolute;
+      top: -7px;
+      left: 50%;
+      margin-left: -92.5px;
+      padding: 8px 50px;
+      &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 2px;
+        left: -15px;
+        border-left: 0px solid transparent;
+        border-right: 17px solid transparent;
+        border-bottom: 17px solid #087026;
+        transform: rotate(-103deg);
+      }
+      &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 2px;
+        right: -15px;
+        border-left: 0px solid transparent;
+        border-right: 17px solid transparent;
+        border-bottom: 17px solid #087026;
+        transform: scaleX(-1) rotate(-103deg);
+      }
+    }
+    .bottom-ribbon {
+      width: 0;
+      height: 0;
+      border-left: 92px solid transparent;
+      border-right: 92px solid transparent;
+      border-top: 17px solid #00e340;
+      position: absolute;
+      left: 50%;
+      margin-left: -92px;
+      top: 39px;
+    }
+    .row {
+      .block-item {
+        .total-item {
+          transition: all 0.5s;
+          position: relative;
+          .item {
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            transition: all 0.5s;
+            .white-paper {
+              width: 100%;
+              height: 270px;
+              background-color: white;
+              .triangle-left {
+                width: 350px;
+                height: 180px;
+                transform: skewY(15deg);
+                position: absolute;
+                bottom: -135px;
+                left: 0;
+                &::before {
+                  content: "";
+                  position: absolute;
+                  width: 350px;
+                  height: 14px;
+                  display: block;
+                  top: -12px;
+                  box-shadow: -11px -3px 11px 0px rgba(0, 0, 0, 0.5);
+                  background: #232526;
+                  background-image: -webkit-linear-gradient(
+                    to left,
+                    #414345,
+                    #232526
+                  );
+                  background-image: linear-gradient(to left, #414345, #232526);
+                }
+              }
+              .triangle-right {
+                width: 350px;
+                height: 180px;
+                transform: skewY(-15deg);
+                position: absolute;
+                bottom: -130px;
+                left: 0;
+                &::before {
+                  content: "";
+                  position: absolute;
+                  width: 350px;
+                  height: 14px;
+                  display: block;
+                  top: -12px;
+                  background: #232526;
+                  background: -webkit-linear-gradient(
+                    to left,
+                    #414345,
+                    #232526
+                  );
+                  background: linear-gradient(to left, #414345, #232526);
+                  box-shadow: 0px -5px 11px 0px rgba(0, 0, 0, 0.5);
+                }
+              }
+            }
+          }
+          .text {
+            transition: all 0.5s;
+            border-right: 0;
+            border-left: 0;
+            border-bottom: 0;
+            width: 99.3%;
+            background-color: white;
+            z-index: 3;
+            position: absolute;
+            left: 0.4%;
+            top: 0;
+            h5 {
+              padding-left: 5px;
+            }
+            p {
+              margin-bottom: 5px;
+              padding: 0px 10px;
+              text-align: justify;
+              line-height: 1.3;
+              font-weight: lighter;
+            }
+          }
+          .shadow-item {
+            position: absolute;
+            bottom: -209px;
+            left: 50%;
+            margin-left: -14px;
+            display: block;
+            width: 32px;
+            background-color: rgba(177, 177, 177, 0.9);
+            height: 5px;
+            transform: scale3d(2.5, 0.5, 1);
+            box-shadow: 1px 0px 11px 7px #b1b1b1;
+            border-radius: 100px / 50px;
+          }
+          i {
+            position: absolute;
+            left: 50%;
+            margin-left: -37px;
+            bottom: -80px;
+            transition: all 0.9s;
+          }
+          &:hover i {
+            transform: rotate(360deg);
+          }
+          &:hover {
+            top: -30px;
+          }
+        }
+      }
+    }
+  }
+
+  //ve hinh Vuong transforms:rotate Xoay => Tam Giac | dung clip de cắt
+  .triangle-bottom1,
+  .triangle-bottom2,
+  .triangle-bottom3 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    bottom: -116px;
+    clip: rect(auto, 411px, auto, 234px);
+    transform: rotate(90deg);
+  }
+}
+//tach ra de khac color Tam Giac bottom
+.triangle-bottom1 {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    transform: rotate(-45deg);
+    right: 10px;
+    background: #ff416c;
+    background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+  }
+}
+.triangle-bottom2 {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    transform: rotate(-45deg);
+    right: 10px;
+    background: #457fca;
+    background: -webkit-linear-gradient(to right, #5691c8, #457fca);
+    background: linear-gradient(to right, #5691c8, #457fca);
+  }
+}
+.triangle-bottom3 {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    transform: rotate(-45deg);
+    right: 10px;
+    background: #4bbd6c;
+    background: -webkit-linear-gradient(to right, #4bbd6c, #96c93d);
+    background: linear-gradient(to right, #4bbd6c, #96c93d);
+  }
+}
+.gradient-service-1 {
+  background: #ff416c;
+  background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+.gradient-service-2 {
+  background: #457fca; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #5691c8,
+    #457fca
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #5691c8,
+    #457fca
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.gradient-service-3 {
+  background: #4bbd6c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #96c93d,
+    #4bbd6c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #96c93d,
+    #4bbd6c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.fa-star-o {
+  &::before {
+    content: "\f006";
+  }
+}

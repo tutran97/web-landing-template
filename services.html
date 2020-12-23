@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi">
+  <head>
+    <title>Dịch vụ | Công ty Phần Mềm VAS</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logoVAS.png" />
+    <meta name="viewport" content="width=device-width" />
+    <!--Jquery-->
+    <script src="assets/Jquery3.4.1/jquery-3.4.1.min.js"></script>
+    <!--Bootstrap v4.4.1-->
+    <link href="assets/Bootstrap4.4.1/bootstrap.min.css" rel="stylesheet" />
+    <script src="assets/Bootstrap4.4.1/bootstrap.min.js"></script>
+    <!--FontAwesome v4.7.0-->
+    <link
+      href="assets/font-awesome-4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!--OwlCarousel2 v2.2.1-->
+    <link
+      href="assets/OwlCarousel2-2.2.1/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <script src="assets/OwlCarousel2-2.2.1/owl.carousel.min.js"></script>
+    <link
+      href="assets/OwlCarousel2-2.2.1/owl.theme.default.min.css"
+      rel="stylesheet"
+    />
+    <!--Font Josefin -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!--css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style-responsive.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 logo">
+            <a href="index.html"
+              ><img src="img/logoVAS.png" alt="Logo VAS"
+            /></a>
+          </div>
+          <div class="col-md-10 menu-bar">
+            <nav>
+              <ul class="menu">
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="introduction.html">GIỚI THIỆU</a></li>
+                <li><a href="products.html">DỰ ÁN</a></li>
+                <li><a href="services.html">DỊCH VỤ</a></li>
+                <li><a href="contact.html">LIÊN HỆ</a></li>
+                <li><a href="services.html">ĐẶT LÀM PHẦN MỀM</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="content-services">
+        <div class="container">
+          <h2
+            data-toggle="modal"
+            data-target="#exampleModal"
+            onclick="openModal()"
+          >
+            CÔNG TY PHẦN MỀM VAS CÓ CÁC DỊCH VỤ PHẦN MỀM NHƯ
+          </h2>
+          <div class="content-card">
+            <div class="card card-1 mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img
+                    src="img/services/service-1.jpg"
+                    class="card-img"
+                    alt="service-1"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">GIA CÔNG PHẦN MỀM THEO YÊU CẦU</h5>
+                    <p class="card-text">
+                      Gia công phần mềm, viết phần mềm theo yêu cầu, phần mềm
+                      quản lý doanh nghiệp, quản lý bán hàng, phần mềm quản lý
+                      an toàn lao động, phần mềm quản lý kho,... Hầu hết các
+                      lĩnh vực chúng tôi đều có thể đáp ứng được đầy đủ theo yêu
+                      cầu khách hàng với chất lượng đảm bảo nhất
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-2 mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img
+                    src="img/services/service-2.jpg"
+                    class="card-img"
+                    alt="service-2"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      GIA CÔNG - THIẾT KẾ WEBSITE THEO YÊU CẦU
+                    </h5>
+                    <p class="card-text">
+                      Một website đẹp, chuyên nghiệp được hỗ trợ SEO sẽ làm tăng
+                      lượng khách hàng và thương hiệu doanh nghiệp của bạn. Với
+                      công nghệ APS.NET MVC mới nhất, chúng tôi đảm bảo website
+                      của bạn sẽ chạy nhanh và ổn định nhất, theo đúng ý mọi ý
+                      tưởng mà bạn có thể nghĩ ra
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-3">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img
+                    src="img/services/service-3.jpg"
+                    class="card-img"
+                    alt="service-3"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">VIẾT ỨNG DỤNG TRÊN ĐIỆN THOẠI</h5>
+                    <p class="card-text">
+                      Thế mạnh của công ty phần mềm XEP là sự kết hợp hệ thống
+                      quản lý trên nền web dựa trên nền tảng với triển khai ứng
+                      dụng trên mobile như IOS và Android giúp cho khả năng
+                      tương tác khách hàng tốt hơn trên các thiết bị smartphone
+                      hiện nay.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="hr-text" data-content="↭" />
+          <div class="content-text block-1">
+            <b>1. GIA CÔNG PHẦN MỀM THEO YÊU CẦU</b>
+            <br />Khi các phần mềm hiện sẵn có trên thị trường không thể đáp ứng
+            được các yêu cầu công việc đặc thù của mình, quý vị có thể nghĩ ngay
+            đến việc đặt viết một phần mềm theo yêu cầu riêng. Với Công Ty Phát
+            Triển Phần Mềm XEP, việc thiết kế và xây dựng một phần mềm hoàn toàn
+            theo yêu cầu đặc thù công việc của bạn không còn quá khó khăn hay
+            tốn kém nữa. Với dịch vụ và quy trình viết phần mềm theo yêu cầu
+            chuyên nghiệp của XEP Software, mọi yêu cầu riêng đặc biệt của quý
+            vị đều được đáp ứng hơn cả mong đợi. Chúng tôi nhận Viết Phần Mềm
+            Theo Yêu Cầu (có thể chạy online và offline) trong thời gian nhanh
+            nhất, chi phí thấp nhất, đảm bảo uy tín chất lượng. Với kinh nghiệm
+            nhiều năm làm việc trong những công ty phát triển phần mềm quản lý ở
+            tất cả các lĩnh vực như: Phần mềm Kế toán, Phần mềm Nhân Sự, Phần
+            mềm Quản lý Kho - Vật tư, Phần mềm Bán Hàng, Phần mềm Khách Sạn,
+            phần mềm Nhà hàng Café, Karaoke, phần mềm giáo dục, phần mềm quản lý
+            an toàn lao động,... Chúng tôi sẵn sàng đáp ứng tất cả các nhu cầu
+            riêng đặc biệt của quý khách về phần mềm quản lý, với mọi quy mô từ
+            nhỏ đến lớn, đa ngành, đa địa điểm. Nếu bạn thấy công việc kinh
+            doanh của bạn tốn quá nhiều chi phí, thời gian và công sức, hoặc
+            muốn nâng cao hiệu quả kinh doanh hơn nữa thì hãy liên ngay với
+            chúng tôi, chúng tôi sẽ tư vấn cho bạn những giải pháp công nghệ
+            thông tin tốt và phù hợp nhất. Tiêu chuẩn viết phần mềm theo yêu cầu
+            của XEP: - Giao diện trực quan, hiện đại, dễ dàng thao tác - Chức
+            năng được thiết kế khoa học, phù hợp nhất với yêu cầu thiết thực cụ
+            thể của phần mềm - Các module hoạt động chính xác, đảm bảo làm việc
+            tốt ngay trong ngày đầu tiên bàn giao - Bảo mật tốt, tránh việc bị
+            mất dữ liệu không mong muốn, đề phòng hầu hết các rủi ro có thể xảy
+            ra - Dễ dàng mở rộng, phát triển thêm chức năng theo yêu cầu mới của
+            khách hàng Những lĩnh vực tiêu biểu mà công ty phần mềm chúng tôi đã
+            thực hiện: -
+            <a href="javascript:void()" targer="_blank"
+              >Phần mềm quản lý hoa hồng nhà thuốc
+            </a>
+            -
+            <a href="javascript:void()" targer="_blank"
+              >Phần mềm quản lý giao nhận hàng hóa
+            </a>
+            -
+            <a href="javascript:void()" targer="_blank"
+              >Phần mềm quét dữ liệu thu thập thông tin tự động website
+            </a>
+            -
+            <a href="javascript:void()" targer="_blank"
+              >Phần mềm quản lý cho thuê Bất Động Sản Chạy Online
+            </a>
+            -
+            <a href="javascript:void()" targer="_blank"
+              >Phần mềm theo dõi thực hiện công việc Bất Động Sản
+            </a>
+            -
+            <a href="javascript:void()" targer="_blank"
+              >Phần mềm quản lý kho thời trang
+            </a>
+            -
+            <a href="javascript:void()" targer="_blank"
+              >Phần mềm dự đoán kết quả xổ số
+            </a>
+            -
+            <a href="javascript:void()" targer="_blank"
+              >Hệ Thống Phần Mềm Quản Lý Giao Nhận Hoàn Chỉnh
+            </a>
+            -
+            <a href="javascript:void()" targer="_blank"
+              >Hệ Thống Bán Hàng Online Hoàn Chỉnh
+            </a>
+            -
+            <a href="javascript:void()" targer="_blank"
+              >Phần Mềm Khảo Sát Ý Kiến Khách Hàng Chạy Online
+            </a>
+
+            <div class="wrapper">
+              <a href="javascript:void()">
+                <span>ĐĂNG KÝ NGAY</span>
+                <span
+                  class="animate__animated animate__heartBeat animate__infinite"
+                ></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="content-text block-2">
+            <b>2. GIA CÔNG - THIẾT KẾ WEBSITE THEO YÊU CẦU</b>
+            <br />Công ty phần mềm XEP thiết kế website bằng công nghệ mới nhất
+            MVC5, CSS3, Javascrip, SQL Server ... và viết trên môi trường .Net
+            của Microsoft tạo ra tính bảo mật và dễ dàng phát triển sau này.
+            Website luôn đảm bảo các tiêu chuẩn SEO, tối ưu onpage cực tốt giúp
+            người dùng dễ dàng tìm thấy website trên các công cụ tìm kiếm.
+            Website là đại diện cho bộ mặt của công ty trong thế giới Internet
+            rộng lớn, nó ảnh hưởng rất nhiều đến giá trị của công ty. Website
+            giúp bạn giới thiệu thông tin dễ dàng hơn bao giờ hết, nó là công cụ
+            hữu hiệu để bạn buôn bán trao đổi sản phẩm, dịch vụ,... Và trong
+            thời đại internet hiện nay, nó thường là nơi đầu tiên để khách hàng
+            biết đến bạn và dịch vụ mà bạn cung cấp. Một website được đầu tư
+            đúng mực với giao diện, nội dung truyền tải sinh động cộng với khả
+            năng tương tác với người dùng cao sẽ là một lời khẳng định cho chất
+            lượng sản phẩm và dịch vụ của công ty sở hữu website đó. Các doanh
+            nghiệp khác và đối thủ của Bạn đang đầu tư rất nhiều và mạnh mẽ vào
+            các chiến dịch marketing trực tuyến? Vậy Bạn đang làm gì lúc này?
+            Hãy hành động! Tiêu chuẩn thiết kế website của XEP: - Giao diện hiện
+            đại, sinh động, bắt mắt. Đây là tiêu chuẩn rất quan trọng vì website
+            là bộ mặt của một doanh nghiệp hay tổ chức nào đó - Thời gian hoàn
+            thành nhanh chóng, không để khách hàng phải chờ đợi quá lâu - Đảm
+            bảo các tiêu chuẩn SEO như tốc độ tải trang, trình bày nội dung,
+            thân thiện với người dùng - Response giao diện, chạy đẹp trên mọi
+            thiết bị hiển thị nó - Bảo mật tốt, tránh việc bị mất dữ liệu không
+            mong muốn, đề phòng hầu hết các rủi ro có thể xảy ra - Dễ dàng mở
+            rộng giao diện và chức năng theo yêu cầu mới của khách hàng -
+            <a href="javascript:void()" targer="_blank"
+              >Website quản lý hoa hồng nhà thuốc
+            </a>
+            -
+            <a href="javascript:void()" targer="_blank"
+              >Website quản lý giao nhận hàng hóa
+            </a>
+            -
+            <a href="javascript:void()" targer="_blank"
+              >Website quét dữ liệu thu thập thông tin tự động website
+            </a>
+            -
+            <a href="javascript:void()" targer="_blank"
+              >Website quản lý cho thuê Bất Động Sản Chạy Online
+            </a>
+            -
+            <a href="javascript:void()" targer="_blank"
+              >Website theo dõi thực hiện công việc Bất Động Sản
+            </a>
+            -
+            <a href="javascript:void()" targer="_blank"
+              >Website quản lý kho thời trang
+            </a>
+            -
+            <a href="javascript:void()" targer="_blank"
+              >Website dự đoán kết quả xổ số
+            </a>
+
+            <div class="wrapper">
+              <a href="javascript:void()">
+                <span>ĐĂNG KÝ NGAY</span>
+                <span
+                  class="animate__animated animate__heartBeat animate__infinite"
+                ></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="content-text block-3">
+            <b>3. VIẾT ỨNG DỤNG TRÊN ĐIỆN THOẠI</b>
+            <br />
+            <div class="row">
+              <div class="col-md-8">
+                Ngoài ra XEP nhận viết ứng dụng android và viết ứng dụng IOS
+                theo yêu cầu của quý khách hàng. Thiết bị di động giờ đây là đã
+                gắn liền với đời sống con người, không những ở thành phố mà ngay
+                cả ở các vùng quê nó cũng trở nên rất phổ biến. Theo đó, nhu cầu
+                viết phần mềm quản lý trên mobile ngày càng nâng cao vì tính
+                tiện dụng của nó, và với chức năng định vị của google maps cùng
+                hàng loạt các thiết bị hỗ trợ thông minh khác, ứng dụng mobile
+                gần như có thể quản lý sát sao được từng hoạt động của mỗi cá
+                nhân. Dự án mobile tiêu biểu nhất của chúng tôi là hệ thống quản
+                lý hàng nghìn PG phát quà từ các bệnh viện và nhiều các dự án
+                khác nữa. Nếu bạn có nhu cầu viết ứng dụng mobile hãy liên hệ
+                ngay với XEP nhé.
+              </div>
+              <div class="col-md-4">
+                <p><img src="img/services/smartphone.png" /></p>
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <a href="javascript:void()">
+                <span>ĐĂNG KÝ NGAY</span>
+                <span
+                  class="animate__animated animate__heartBeat animate__infinite"
+                ></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="content-text block-4">
+            <b>4. BẢO TRÌ PHẦN MỀM</b>
+            <p>
+              Phần mềm ứng dụng trong công tác quản lý là nhu cầu không thể
+              thiếu đối với bất cứ doanh nghiệp nào bao gồm tất cả các lĩnh vực
+              như quản lý nhân viên, quản lý vật tư, quản lý hệ thống,… Hiện
+              nay, trước sự cạnh tranh ngày càng gay gắt giữa các doanh nghiệp,
+              nhu cầu cải tiến hệ thống quản lý đóng vai trò vô cùng quan trọng
+              giúp doanh nghiệp phát triển lâu dài. Nắm bắt được nhu cầu trên,
+              công ty XEP đưa ra dịch vụ Phát Triển Chức Năng Phần Mềm và bảo
+              trì phần mềm với sự hỗ trợ tận tình, chuyên nghiệp, mang lại hiệu
+              quả trong công tác quản lý, điều hành và kiểm soát. Phương châm
+              làm việc của đội ngũ cán bộ tại công ty chúng tôi chính là “Niềm
+              tin_uy tín_chất lượng_ thỏa mãn”. Chính vì vậy, đến với công ty
+              XEP luôn là sự lựa chọn sáng suốt cho quý công ty muốn nâng cấp hệ
+              thống và quý khách hàng đang có khát vọng khởi nghiệp.
+            </p>
+
+            <b>Niềm tin:</b>
+            <p>
+              - Nhờ vào sự tin tưởng của khách hàng, công ty XEP đã trở thành
+              công tở thành công ty có dịch vụ bảo trì phần mềm tốt nhất hiện
+              nay. Vì vậy, trong thời gian tới, công sẽ nuôi dưỡng niềm tin này
+              ngày càng lớn hơn bằng nổ lực của toàn thể nhân viên.
+            </p>
+
+            <b>Uy tín:</b>
+            <p>
+              - Dịch vụ bảo trì phần mềm của công ty luôn thực hiện đúng theo
+              cam kết hợp đồng. Vì vậy, khách hàng hoàn toàn có thể yên tâm khi
+              hợp tác với chúng tôi.
+            </p>
+
+            <b>Chất lượng:</b>
+            <p>
+              - Với khát vọng mang đến thương hiệu, sự uy tín trong lĩnh vực bảo
+              trì phần mềm, vì thế chất lượng là yếu tố công ty ghi nhớ hàng
+              đầu. Công ty cam kết sẽ mang đến dịch vụ chất lượng thông qua đội
+              ngũ nhân sự chuyên nghiệp nhất.
+            </p>
+
+            <b>Thỏa mãn:</b>
+            <p>
+              - Công ty cam đoan sẽ đáp ứng quý khách hàng cả lợi ích chức năng
+              lẫn lợi ích cảm xúc, mang đến sự thỏa mãn tốt nhất cho khách hàng
+              thông qua đáp ứng nhu cầu, mong muốn của khách hàng về dịch vụ bảo
+              trì phần mềm đồng thời đội ngũ nhân viên chuyên nghiệp, thân thiện
+              sẽ luôn tạo môi trường hợp tác vui vẻ và thoải mái nhất cho quý
+              khách.
+            </p>
+
+            <div class="wrapper">
+              <a href="javascript:void()">
+                <span>ĐĂNG KÝ NGAY</span>
+                <span
+                  class="animate__animated animate__heartBeat animate__infinite"
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 introduction-text">
+            <img src="img/logoVAS.png" alt="LogoVAS" />
+            <p>
+              <b>Công ty phần mềm VAS</b> - chuyên viết phần mềm theo yêu cầu.
+              Các phần mềm có sẵn trên thị trường có thể không đáp ứng được yêu
+              cầu của các bạn.Team chúng tôi tập hợp các lập trình viên từ những
+              công ty phần mềm lớn nên có thể cùng bạn phát triển phần mềm theo
+              yêu cầu một cách tốt nhất.
+            </p>
+          </div>
+          <div class="col-md-4 contact-text">
+            <p>LIÊN HỆ</p>
+            <i class="fa fa-building-o fa-2x fa-fw" aria-hidden="true"></i>
+            <p>
+              Tòa nhà An phú Plaza, 117 - 119 Lý Chính Thắng, Phường 07, Quận 3,
+              TPHCM
+            </p>
+            <i class="fa fa-phone-square fa-2x fa-fw" aria-hidden="true"></i>
+            <p><a href="tel:0774677160">077.4677.160</a></p>
+            <i class="fa fa-envelope fa-2x fa-fw" aria-hidden="true"></i>
+            <p>info@vas.vn</p>
+
+            <a
+              href="https://www.facebook.com/VAS.Software.Company"
+              target="_blank"
+            >
+              <i
+                class="fa fa-facebook-square fa-2x fa-fw"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a
+              href="https://www.facebook.com/messages/t/VAS.Software.Company"
+              target="_blank"
+            >
+              <i class="fa fa-commenting fa-2x fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="skype:VAS.Software.Company?chat" target="_blank"
+              ><i class="fa fa-skype fa-2x fa-fw" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/VAS.Software.Company"
+              target="_blank"
+            >
+              <i class="fa fa-instagram fa-2x fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="col-md-4 response-form">
+            <form action="/" method="post">
+              <div class="form__group field">
+                <input
+                  type="text"
+                  id="txtTitle"
+                  class="form__field"
+                  placeholder="Tiêu đề"
+                />
+                <label for="name" class="form__label">Tiêu đề</label>
+              </div>
+              <div class="form__group field">
+                <input
+                  type="text"
+                  id="txtName"
+                  class="form__field"
+                  placeholder="Họ tên"
+                />
+                <label for="name" class="form__label">Họ tên</label>
+              </div>
+              <div class="form__group field">
+                <input
+                  type="text"
+                  id="txtEmail"
+                  class="form__field"
+                  placeholder="Email"
+                />
+                <label for="name" class="form__label">Email</label>
+              </div>
+              <div class="form__group field">
+                <input
+                  type="text"
+                  id="txtPhoneNumber"
+                  class="form__field"
+                  placeholder="SĐT"
+                />
+                <label for="name" class="form__label">SĐT</label>
+              </div>
+              <textarea
+                type="text"
+                id="txtContent"
+                placeholder="Nội dung"
+              ></textarea>
+              <button>Gửi phản hồi</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      $(".card-1").click(function () {
+        var a = $(".block-1").offset();
+
+        $([document.documentElement, document.body]).animate(
+          {
+            scrollTop: $(".block-1").offset().top - 100,
+          },
+          200
+        );
+      });
+      $(".card-2").click(function () {
+        $([document.documentElement, document.body]).animate(
+          {
+            scrollTop: $(".block-2").offset().top - 100,
+          },
+          200
+        );
+      });
+      $(".card-3").click(function () {
+        $([document.documentElement, document.body]).animate(
+          {
+            scrollTop: $(".block-3").offset().top - 100,
+          },
+          200
+        );
+      });
+    </script>
+  </body>
+</html>

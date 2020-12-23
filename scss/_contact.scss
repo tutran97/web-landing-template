@@ -1,0 +1,26 @@
+.content-contact {
+  padding: 70px 0;
+  .contact-text {
+    p {
+      margin: 8px 0;
+      padding: 5px 0;
+      &:first-child {
+        color: black;
+        font-size: 18px;
+      }
+    }
+    i {
+      float: left;
+      color: rgb(255, 139, 0);
+      &:nth-child(2) {
+        padding: 8px 0px;
+      }
+    }
+    a {
+      color: black;
+      &:hover {
+        color: rgb(255, 139, 0);
+      }
+    }
+  }
+}

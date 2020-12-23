@@ -1,0 +1,70 @@
+@import "scss/slider";
+@import "scss/header";
+@import "scss/intro";
+@import "scss/serviceIndex";
+@import "scss/software-fieldIndex";
+@import "scss/software-targetIndex";
+@import "scss/customer-sliderIndex";
+@import "scss/footer";
+@import "scss/contact";
+//pageGioiThieu
+@import "scss/introPage";
+//pageProduct
+@import "scss/productPage";
+//pageService
+@import "scss/servicePage";
+
+body {
+  $font-family: 100% $AHS;
+  color: $primary-color;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+//hr
+.hr-text {
+  margin: auto;
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  width: 40%;
+  text-align: center;
+  height: 1.5em;
+  opacity: 0.5;
+  &::before {
+    content: "";
+    background: linear-gradient(to right, transparent, #818078, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+  }
+  &::after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black !important;
+    padding: 0 0.5em;
+    line-height: 1.5em;
+    background-color: #fcfcfa;
+  }
+}
+//custom nút lên đầu trang
+#toTop {
+  position: fixed;
+  bottom: 15%;
+  width: 34px;
+  height: 34px;
+  right: 2%;
+  cursor: pointer;
+  padding: 5px 7px 7px 7px;
+  z-index: 100;
+  border-radius: 50%;
+  background-color: rgb(255, 139, 0);
+  border: none;
+}
